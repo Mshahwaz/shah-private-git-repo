@@ -43,7 +43,7 @@ pipeline {
         time: $(date -u +"%Y-%m-%dT%H:%M:%SZ")
         url: $BUILD_URL
         EOF'''
-        archiveArtifacts artifacts: 'deploy-info-$BUILD_NUMBER.txt', fingerprint: true
+        archiveArtifacts artifacts: "deploy-info-$BUILD_NUMBER.txt", fingerprint: true
       }
     }
     stage('Test') {
