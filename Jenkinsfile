@@ -5,12 +5,12 @@ pipeline {
     TAG="${env.BUILD_NUMBER}"
   }
   stages {
-    stage('Checkout SCM') {
+    /*stage('Checkout SCM') {
       steps {
         git branch: 'main', credentialsId: 'github-pat', 
         url: 'https://github.com/Mshahwaz/shah-private-git-repo.git'
       }
-    }
+    }*/
     stage('Build') {
       steps {
         echo "Building image..."
