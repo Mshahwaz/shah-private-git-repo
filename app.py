@@ -5,7 +5,8 @@ app = Flask(__name__)
 def hello():
     return jsonify(
         message="✨ Welcome to Cloud ✨",
-        tip="Built with Flask, shipped by Jenkins, running in Docker.--> V.1"
+        tip="Built with Flask, shipped by Jenkins, running in Docker.--> V.1",
+        UI="This is new feature added on request of customer"
     )
 
 if __name__ == "__main__":
